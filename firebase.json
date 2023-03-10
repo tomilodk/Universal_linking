@@ -29,7 +29,7 @@
                 "destination": "/.well-known/apple-app-site-association"
             },
             {
-                "source": "/**",
+                "source": "*",
                 "dynamicLinks": true
             }
         ]
