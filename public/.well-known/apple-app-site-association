@@ -6,8 +6,11 @@
                 "appIDs": [
                     "6RPAF9Y2UZ.com.holion.universallink"
                 ],
-                "paths": [
-                    "/*"
+                "components": [
+                  {
+                     "/": "/openinapp/*",
+                     "comment": "Matches any URL with a path that starts with /openinapp/."
+                  }
                 ]
             }
         ]
