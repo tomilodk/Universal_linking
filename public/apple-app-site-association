@@ -1,0 +1,20 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "6RPAF9Y2UZ.com.holion.universallink" ],
+             "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true,
+                  "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+               },
+               {
+                  "/": "/openinapp/*",
+                  "comment": "Matches any URL with a path that starts with /openinapp/."
+               }
+             ]
+           }
+       ]
+   }
+}
