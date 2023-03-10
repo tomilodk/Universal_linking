@@ -2,12 +2,7 @@
     "hosting": {
         "public": "dist",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-        "rewrites": [
-            {
-                "source": "/**",
-                "dynamicLinks": true
-            }
-        ],
+        "appAssociation": "NONE",
         "headers": [
             {
                 "source": "/.well-known/apple-app-site-association",
@@ -17,17 +12,17 @@
                         "value": "application/json"
                     }
                 ]
-            },
-            {
-                "source": "/apple-app-site-association",
-                "headers": [
-                    {
-                        "key": "Content-Type",
-                        "value": "application/json"
-                    }
-                ]
             }
         ],
-        "appAssociation": "AUTO"
+        "rewrites": [
+            {
+                "source": "/.well-known/apple-app-site-association",
+                "destination": "/.well-known/apple-app-site-association"
+            },
+            {
+                "source": "**",
+                "destination": "/index.html"
+            }
+        ]
     }
 }
