@@ -2,9 +2,19 @@
     "hosting": {
         "public": "dist",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+        "appAssociation": "AUTO",
         "headers": [
             {
                 "source": "/.well-known/apple-app-site-association",
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ]
+            },
+            {
+                "source": "/apple-app-site-association",
                 "headers": [
                     {
                         "key": "Content-Type",
@@ -17,6 +27,10 @@
             {
                 "source": ".well-known/apple-app-site-association",
                 "destination": "/.well-known/apple-app-site-association"
+            },
+            {
+                "source": "/**",
+                "dynamicLinks": true
             }
         ]
     }

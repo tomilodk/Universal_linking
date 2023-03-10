@@ -1,0 +1,15 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appIDs": [
+                    "6RPAF9Y2UZ.com.holion.universallink"
+                ],
+                "paths": [
+                    "/*"
+                ]
+            }
+        ]
+    }
+}
