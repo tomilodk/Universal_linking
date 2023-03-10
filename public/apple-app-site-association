@@ -1,0 +1,18 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appIDs": [
+                    "6RPAF9Y2UZ.com.holion.earfabscantest"
+                ],
+                "components": [
+                  {
+                     "/": "/openinapp/*",
+                     "comment": "Matches any URL with a path that starts with /openinapp/."
+                  }
+                ]
+            }
+        ]
+    }
+}
