@@ -4,12 +4,12 @@
         "details": [
             {
                 "appIDs": [
-                    "6RPAF9Y2UZ.com.holion.earfabscantest"
+                    "GLCFB27MS6.com.hearables3d.earfabscan"
                 ],
                 "components": [
                   {
-                     "/": "/openinapp/*",
-                     "comment": "Matches any URL with a path that starts with /openinapp/."
+                     "/": "/api/QrCode*",
+                     "comment": "Matches any URL with a path that starts with /api/QrCode*"
                   }
                 ]
             }
