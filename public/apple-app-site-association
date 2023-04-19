@@ -6,11 +6,9 @@
                 "appIDs": [
                     "6RPAF9Y2UZ.com.holion.universallink"
                 ],
-                "components": [
-                  {
-                     "/": "/api/QrCode*",
-                     "comment": "Matches any URL with a path that starts with /api/QrCode*"
-                  }
+                "paths": [
+                    "/api/QrCode*",
+                    "NOT /api/QrCode/GetApp*"
                 ]
             }
         ]
