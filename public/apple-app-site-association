@@ -8,7 +8,7 @@
                 ],
                 "paths": [
                     "/api/QrCode*",
-                    "NOT /api/QrCode/GetApp*"
+                    "NOT /api/QrCode*"
                 ]
             }
         ]
